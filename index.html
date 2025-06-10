@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josefina Belaunzaran - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="fade-in">
+    <div class="container">
+      <h1>Josefina Belaunzaran</h1>
+      <p>Desarrolladora Fullstack | Java · PHP · Laravel · WordPress · Docker</p>
+      <button class="cta-button glow" onclick="scrollToSection('contact')">Contactame</button>
+    </div>
+  </header>
+
+<section class="about container" id="about">
+  <h2 id="about-toggle">
+    Sobre mí 
+    <span id="toggle-icon">▼</span>
+  </h2>
+  <div class="about-content">
+    <p>Soy futura Técnica Universitaria en Desarrollo de Aplicaciones Informáticas, a punto de finalizar mi formación (solo me queda un examen final para obtener el título).</p>
+    <p>Desde agosto de 2024, trabajo en la <strong>UNICEN</strong>, en el área de informática, donde participo activamente en el desarrollo y mantenimiento de sitios web institucionales, buscando siempre optimizar la experiencia del usuario y aportar soluciones eficientes.</p>
+    <p>Me considero una persona apasionada por la tecnología y el aprendizaje continuo, con ganas de enfrentar nuevos desafíos y crecer profesionalmente.</p>
+    <p>Disfruto trabajar en equipo, colaborando y comunicándome de manera efectiva para lograr objetivos comunes y entregar resultados de calidad.</p>
+    <p>Además, me interesa mantenerme actualizada en las últimas tendencias y herramientas de desarrollo, combinando creatividad y lógica para crear soluciones que marcan la diferencia.</p>
+  </div>
+</section>
+
+
+<section class="projects container fade-in" id="projects">
+  <h2>Proyectos destacados</h2>
+
+    <div class="project-card slide-in-left">
+      <h3>Página web infantil: Más amigos, más diversión</h3>
+      <p>
+        Página interactiva creada con JavaScript, CSS y HTML, con efectos avanzados de scroll y diseño completamente responsive para una experiencia divertida y dinámica.
+      </p>
+      <button class="cta-button glow" onclick="window.open('https://josefinabelaunzaran0106.github.io/Interfaces/TP4/', '_blank')">Ver demo</button>
+    </div>
+
+
+    <div class="project-card slide-in-right">
+      <h3>Microservicios de disponibilidad de Monopatines</h3>
+      <p>
+        Trabajo colaborativo en grupo realizado para la materia Arquitectura Web de TUDAI. Backend desarrollado en Spring Boot para gestionar monopatines y paradas, utilizando MongoDB para la persistencia de datos.
+      </p>
+      <button class="cta-button glow" onclick="window.open('https://github.com/GianCeschi/Grupo20-Tpe-Especial-ArquiWeb', '_blank')">Ver código</button>
+    </div>
+
+    <div class="project-card slide-in-left">
+      <h3>Proyecto vinoteca en MVC y API REST</h3>
+      <p>
+        Trabajo colaborativo en grupo realizado para la materia Web 2 de TUDAI. Proyecto de vinotecas realizado en dos partes: un sistema MVC y una API REST, ambos diseñados para mostrar métricas de negocio en tiempo real. El dashboard es responsive y construido con React y Chart.js para una visualización dinámica y clara de los datos.
+      </p>
+      <div style="display: flex; gap: 10px;">
+        <button class="cta-button glow" onclick="window.open('https://github.com/josefinabelaunzaran0106/TPE-WEB2-vinoteca', '_blank')">Ver código MVC</button>
+        <button class="cta-button glow" onclick="window.open('https://github.com/PauloAlvarez01/tpe_web2_3raEntrega', '_blank')">Ver código API</button>
+      </div>
+    </div>
+
+  </section>
+<section class="contact container fade-in" id="contact" aria-label="Sección de contacto">
+  <h2>Contacto</h2>
+  <p class="contact-invite">¡Escríbeme o visítame en mis redes!</p>
+  
+  <div class="icons" role="list">
+    <a href="mailto:josefinabelaunzaran0106@gmail.com" target="_blank" rel="noopener" class="icon-link" aria-label="Enviar email a Josefina" title="Email" role="listitem">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+        <rect x="2" y="5" width="20" height="14" rx="2" ry="2" />
+        <path d="M2 7l10 7 10-7" />
+      </svg>
+    </a>
+
+    <a href="https://www.linkedin.com/in/josefina-belaunzaran/" target="_blank" rel="noopener" class="icon-link" aria-label="Perfil de LinkedIn de Josefina" title="LinkedIn" role="listitem">
+      <svg width="30" height="30" fill="none" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <rect x="2" y="7" width="5" height="12" />
+        <circle cx="4.5" cy="4.5" r="2" />
+        <path d="M9 19h4v-7a2 2 0 0 1 4 0v7h4v-8a6 6 0 0 0-12 0z"/>
+      </svg>
+    </a>
+
+    <a href="https://github.com/josefinabelaunzaran0106" target="_blank" rel="noopener" class="icon-link" aria-label="Perfil de GitHub de Josefina" title="GitHub" role="listitem">
+      <svg width="30" height="30" fill="none" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1 .1 1.6 1 1.6 1 1 .1 1.7 1.1 1.7 1.1 1 1.7 2.8 1.2 3.5.9.1-.6.3-1 .6-1.2-2.2-.3-4.4-1.1-4.4-5 0-1.1.4-2 .9-2.7 0 0 .8-.3 2.6 1 1.5-.4 3-.4 4.5 0 1.7-1.3 2.5-1 2.5-1 .6.9 1 1.8 1 2.9 0 3.9-2.1 4.7-4.3 5 .3.3.6.9.6 1.7v2.5c0 .3.2.6.7.5C19.1 20.1 22 16.4 22 12c0-5.5-4.5-10-10-10z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 Josefina Belaunzaran
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
