@@ -375,9 +375,12 @@ header.scrolled .cta-button {
 /* Media Query para pantallas móviles: */
 @media (max-width: 768px) {
   .projects {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr; /* Cambiar a una sola columna */
     gap: 1rem; /* Reducimos el espacio entre las cards */
+    width: 100%; /* Aseguramos que ocupe el 100% del ancho */
+    padding: 0 1rem; /* Espaciado en los bordes */
   }
 
   .project-card {
