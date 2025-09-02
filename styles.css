@@ -351,3 +351,58 @@ header.scrolled .cta-button {
     color: white;
     cursor: pointer;
   }
+  /* Estilo base para pantallas grandes (desktop) */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: inherit;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.project-card a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query para pantallas de móvil (ajuste para que las cards se acomoden mejor) */
+@media (max-width: 768px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en móviles */
+    gap: 1rem; /* Reducimos el espacio entre las cards */
+  }
+
+  .project-card {
+    padding: 1rem; /* Reducimos el padding para que quepan mejor en pantalla pequeña */
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem; /* Reducimos el tamaño de la fuente en móviles */
+  }
+}
