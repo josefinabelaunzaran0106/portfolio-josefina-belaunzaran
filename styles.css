@@ -354,7 +354,7 @@ header.scrolled .cta-button {
   /* Estilo base para pantallas grandes (desktop) */
 .projects {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Una sola columna en escritorio */
   gap: 1.5rem;
 }
 
@@ -390,19 +390,19 @@ header.scrolled .cta-button {
   text-decoration: underline;
 }
 
-/* Media Query para pantallas de móvil (ajuste para que las cards se acomoden mejor) */
+/* Media Query para pantallas móviles: */
 @media (max-width: 768px) {
   .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas en móviles */
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
     gap: 1rem; /* Reducimos el espacio entre las cards */
   }
 
   .project-card {
-    padding: 1rem; /* Reducimos el padding para que quepan mejor en pantalla pequeña */
+    padding: 1rem; /* Reducimos el padding para que se vean mejor en móviles */
   }
 
   .project-card h3 {
-    font-size: 1.2rem; /* Reducimos el tamaño de la fuente en móviles */
+    font-size: 1.2rem; /* Reducimos el tamaño de la fuente */
   }
 }
