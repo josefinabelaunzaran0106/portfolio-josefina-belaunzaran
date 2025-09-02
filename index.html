@@ -31,8 +31,43 @@
 </section>
 
 
-<section class="projects container fade-in" id="projects">
-  <h2>Proyectos destacados</h2>
+    <section class="projects container fade-in" id="projects">
+      <h2>Proyectos destacados</h2>
+      <div class="project-card slide-in-right">
+      <h3>Proyecto de Historia Clínica</h3>
+      <p>
+        Desarrollo de un sistema de historia clínica utilizando PHP y MySQL. El proyecto sigue el patrón de diseño MVC (Modelo-Vista-Controlador) y utiliza templates `.tpl` para la representación de la interfaz de usuario. Permite gestionar de manera eficiente las historias clínicas de los pacientes, con funcionalidades para agregar, editar y consultar registros médicos.
+      </p>
+      <button class="cta-button glow" onclick="openCarousel()">Ver imágenes</button>
+
+      <!-- Modal para el carrusel de imágenes -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeCarousel()">&times;</span>
+        <div class="carousel-container">
+          <div class="carousel">
+            <img src="ingreso-consultorio.png" alt="Vista del formulario de ingreso de datos" class="carousel-item" />
+            <img src="dashboard.png" alt="Pantalla de consulta de historia clínica" class="carousel-item" />
+            <img src="hc.png" alt="Pantalla de edición de historia clínica" class="carousel-item" />
+            <img src="hc2.png" alt="Interfaz de administración de usuarios" class="carousel-item" />
+            <img src="consulta.png" alt="Interfaz de administración de usuarios" class="carousel-item" />
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="project-card slide-in-right">
+      <h3>Carrito de compras en Angular</h3>
+      <p>
+        Proyecto individual desarrollado para el Seminario de Angular de TUDAI. Permite listar productos con imágenes, nombre, precio y categoría. Incluye funcionalidades como agregar productos al carrito, vaciarlo y devolver stock automáticamente. La navegación es simple y amigable, ideal para practicar conceptos clave de Angular.
+      </p>
+      <div style="display: flex; gap: 10px;">
+        <button class="cta-button glow" onclick="window.open('https://stackblitz.com/~/github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran', '_blank')">Ver demo</button>
+        <button class="cta-button glow" onclick="window.open('https://github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran', '_blank')">Ver código</button>
+      </div>
+    </div>
 
     <div class="project-card slide-in-left">
       <h3>Página web infantil: Más amigos, más diversión</h3>
@@ -63,15 +98,31 @@
     </div>
 
     <div class="project-card slide-in-right">
-      <h3>Carrito de compras en Angular</h3>
-      <p>
-        Proyecto individual desarrollado para el Seminario de Angular de TUDAI. Permite listar productos con imágenes, nombre, precio y categoría. Incluye funcionalidades como agregar productos al carrito, vaciarlo y devolver stock automáticamente. La navegación es simple y amigable, ideal para practicar conceptos clave de Angular.
-      </p>
-      <div style="display: flex; gap: 10px;">
-        <button class="cta-button glow" onclick="window.open('https://stackblitz.com/~/github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran', '_blank')">Ver demo</button>
-        <button class="cta-button glow" onclick="window.open('https://github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran', '_blank')">Ver código</button>
-      </div>
-    </div>
+  <h3>Desarrollo de Páginas Personalizadas en WordPress</h3>
+  <p>
+    He trabajado en la personalización de sitios web utilizando WordPress, creando temas personalizados para satisfacer las necesidades de cada cliente. Esto incluyó la integración de funcionalidades específicas mediante la creación de Custom Post Types (CPT) y la modificación de plugins existentes para lograr un rendimiento óptimo. Me aseguré de que todos los sitios fueran completamente responsivos, brindando una excelente experiencia de usuario en dispositivos móviles.
+  </p>
+</div>
+<div class="project-card slide-in-right">
+  <h3>Creación y Personalización de Custom Post Types (CPT)</h3>
+  <p>
+    He diseñado y desarrollado Custom Post Types (CPT) para permitir a los clientes gestionar diferentes tipos de contenido en WordPress de manera eficiente. Esto incluyó la creación de taxonomías personalizadas, la integración de campos personalizados con Advanced Custom Fields (ACF) y la creación de plantillas personalizadas para cada tipo de contenido, mejorando la administración y la visualización de la información en el sitio web.
+  </p>
+</div>
+<div class="project-card slide-in-right">
+  <h3>Desarrollo de Plugins Personalizados en WordPress</h3>
+  <p>
+    A lo largo de mi experiencia en WordPress, he desarrollado plugins personalizados para resolver necesidades específicas de los proyectos. Desde la creación de funcionalidades para la gestión de contenido, hasta la integración de sistemas externos, estos plugins fueron diseñados para ser altamente optimizados, seguros y fáciles de mantener, contribuyendo a la mejora de la eficiencia y la experiencia de usuario.
+  </p>
+</div>
+
+<div class="project-card slide-in-right">
+  <h3>Análisis de Datos con Apache Superset</h3>
+  <p>
+    He trabajado con Apache Superset para el análisis de datos en proyectos complejos. Utilizando esta herramienta de visualización y exploración de datos, he sido capaz de crear dashboards interactivos y visualizaciones dinámicas que han permitido a los clientes tomar decisiones informadas basadas en datos. Este análisis incluyó la creación de gráficos personalizados, filtros y la integración de diversas fuentes de datos.
+  </p>
+</div>
+
 
 
   </section>

@@ -44,3 +44,25 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scrolled');
   }
 });
+
+let currentSlide = 0;
+
+  function openCarousel() {
+    document.getElementById('imageModal').style.display = "block";
+  }
+
+  function closeCarousel() {
+    document.getElementById('imageModal').style.display = "none";
+  }
+
+  function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
+
+    // Calcula la nueva posición
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+    // Desplaza las imágenes
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;  /* Desplaza las imágenes */
+  }
