@@ -162,24 +162,6 @@ justify-content: center;
   color: #42a5f5;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  
-}
-
-.project-card {
-  background: #1f1f1f;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: inherit;
-}
 
 .project-card:hover {
   transform: translateY(-8px);
