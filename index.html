@@ -1,164 +1,863 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Josefina Belaunzaran - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfolio de Josefina Belaunzaran, desarrolladora Fullstack especializada en PHP, Java, WordPress, Laravel y Docker."
+  >
+
+  <title>Josefina Belaunzaran | Desarrolladora Fullstack</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header class="fade-in">
-    <div class="container">
-      <h1>Josefina Belaunzaran</h1>
-      <p>Desarrolladora Fullstack | Java · PHP · Laravel · WordPress · Docker</p>
-      <button class="cta-button glow" onclick="scrollToSection('contact')">Contactame</button>
+
+  <!-- =========================
+       HEADER / NAV
+  ========================== -->
+
+  <header class="site-header">
+
+    <div class="nav-container">
+
+      <a href="#" class="logo">
+        JB
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Tecnologías</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#contact">Contacto</a>
+
+      </nav>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
     </div>
+
   </header>
 
-<section class="about container" id="about">
-  <h2 id="about-toggle">
-    Sobre mí 
-    <span id="toggle-icon">▼</span>
-  </h2>
-  <div class="about-content">
-    <p>Soy Egresada de la Técnicatura Universitaria en Desarrollo de Aplicaciones Informáticas de la Facultad de Ciencias Exactas de la UNICEN</p>
-    <p>Desde agosto de 2024, trabajo en la <strong>UNICEN</strong>, en el área de informática, donde participo activamente en el desarrollo y mantenimiento de sitios web institucionales, buscando siempre optimizar la experiencia del usuario y aportar soluciones eficientes.</p>
-    <p>Me considero una persona apasionada por la tecnología y el aprendizaje continuo, con ganas de enfrentar nuevos desafíos y crecer profesionalmente.</p>
-    <p>Disfruto trabajar en equipo, colaborando y comunicándome de manera efectiva para lograr objetivos comunes y entregar resultados de calidad.</p>
-    <p>Además, me interesa mantenerme actualizada en las últimas tendencias y herramientas de desarrollo, combinando creatividad y lógica para crear soluciones que marcan la diferencia.</p>
-  </div>
-</section>
 
+  <main>
 
-    <section class="projects container fade-in" id="projects">
-      <h2>Proyectos destacados</h2>
-      <div class="project-card slide-in-right">
-      <h3>Proyecto de Historia Clínica</h3>
-      <p>
-        Desarrollo de un sistema de historia clínica utilizando PHP y MySQL. El proyecto sigue el patrón de diseño MVC (Modelo-Vista-Controlador) y utiliza templates `.tpl` para la representación de la interfaz de usuario. Permite gestionar de manera eficiente las historias clínicas de los pacientes, con funcionalidades para agregar, editar y consultar registros médicos.
-      </p>
-      <button class="cta-button glow" onclick="openCarousel()">Ver imágenes</button>
+    <!-- =========================
+         HERO
+    ========================== -->
 
-      <!-- Modal para el carrusel de imágenes -->
-      <div id="imageModal" class="modal">
-        <span class="close" onclick="closeCarousel()">&times;</span>
-        <div class="carousel-container">
-          <div class="carousel">
-            <img src="ingreso-consultorio.png" alt="Vista del formulario de ingreso de datos" class="carousel-item" />
-            <img src="dashboard.png" alt="Pantalla de consulta de historia clínica" class="carousel-item" />
-            <img src="hc.png" alt="Pantalla de edición de historia clínica" class="carousel-item" />
-            <img src="hc2.png" alt="Interfaz de administración de usuarios" class="carousel-item" />
-            <img src="consulta.png" alt="Interfaz de administración de usuarios" class="carousel-item" />
+    <section class="hero">
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <span class="eyebrow">
+            DESARROLLADORA FULLSTACK
+          </span>
+
+          <h1>
+            Josefina<br>
+            <span>Belaunzaran</span>
+          </h1>
+
+          <p class="hero-description">
+            Desarrollo aplicaciones y sitios web utilizando tecnologías
+            modernas, con foco en soluciones funcionales, mantenibles
+            y orientadas a las necesidades de cada proyecto.
+          </p>
+
+          <div class="hero-technologies">
+            <span>PHP</span>
+            <span>Java</span>
+            <span>Laravel</span>
+            <span>WordPress</span>
+            <span>Docker</span>
           </div>
-          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+          <div class="hero-actions">
+
+            <a href="#projects" class="btn btn-primary">
+              Ver proyectos
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Contactarme
+            </a>
+
+          </div>
+
         </div>
+
+        <div class="hero-decoration">
+
+          <div class="code-card">
+
+            <div class="code-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <pre><code>&lt;developer&gt;
+
+  &lt;name&gt;
+    Josefina
+  &lt;/name&gt;
+
+  &lt;focus&gt;
+    Fullstack
+  &lt;/focus&gt;
+
+  &lt;technologies&gt;
+    PHP · Java · JS
+  &lt;/technologies&gt;
+
+&lt;/developer&gt;</code></pre>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
+
+    </section>
 
 
-    <div class="project-card slide-in-right">
-      <h3>Carrito de compras en Angular</h3>
-      <p>
-        Proyecto individual desarrollado para el Seminario de Angular de TUDAI. Permite listar productos con imágenes, nombre, precio y categoría. Incluye funcionalidades como agregar productos al carrito, vaciarlo y devolver stock automáticamente. La navegación es simple y amigable, ideal para practicar conceptos clave de Angular.
-      </p>
-      <div style="display: flex; gap: 10px;">
-        <button class="cta-button glow" onclick="window.open('https://stackblitz.com/~/github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran', '_blank')">Ver demo</button>
-        <button class="cta-button glow" onclick="window.open('https://github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran', '_blank')">Ver código</button>
+    <!-- =========================
+         SOBRE MÍ
+    ========================== -->
+
+    <section class="section about-section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>01</span>
+
+          <h2>Sobre mí</h2>
+
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-intro">
+
+            <p class="lead">
+              Desarrolladora Fullstack con formación en Desarrollo
+              de Aplicaciones Informáticas.
+            </p>
+
+          </div>
+
+          <div class="about-text">
+
+            <p>
+              Soy egresada de la Tecnicatura Universitaria en Desarrollo
+              de Aplicaciones Informáticas de la Facultad de Ciencias
+              Exactas de la UNICEN.
+            </p>
+
+            <p>
+              Desde agosto de 2024 trabajo en el área de informática
+              de la UNICEN, participando en el desarrollo y mantenimiento
+              de sitios web institucionales y en la implementación de
+              nuevas funcionalidades.
+            </p>
+
+            <p>
+              Mi experiencia combina desarrollo backend y frontend,
+              trabajando principalmente con PHP, Java, JavaScript,
+              WordPress, bases de datos relacionales y Docker.
+            </p>
+
+            <p>
+              Me interesa continuar aprendiendo, participar en proyectos
+              desafiantes y desarrollar soluciones que sean claras,
+              mantenibles y útiles para las personas que las utilizan.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
 
-    <div class="project-card slide-in-left">
-      <h3>Página web infantil: Más amigos, más diversión</h3>
-      <p>
-        Página interactiva creada con JavaScript, CSS y HTML, con efectos avanzados de scroll y diseño completamente responsive para una experiencia divertida y dinámica.
-      </p>
-      <button class="cta-button glow" onclick="window.open('https://josefinabelaunzaran0106.github.io/Interfaces/TP4/', '_blank')">Ver demo</button>
-    </div>
+    </section>
 
 
-    <div class="project-card slide-in-right">
-      <h3>Microservicios de disponibilidad de Monopatines</h3>
-      <p>
-        Trabajo colaborativo en grupo realizado para la materia Arquitectura Web de TUDAI. Backend desarrollado en Spring Boot para gestionar monopatines y paradas, utilizando MongoDB para la persistencia de datos.
-      </p>
-      <button class="cta-button glow" onclick="window.open('https://github.com/GianCeschi/Grupo20-Tpe-Especial-ArquiWeb', '_blank')">Ver código</button>
-    </div>
+    <!-- =========================
+         TECNOLOGÍAS
+    ========================== -->
 
-    <div class="project-card slide-in-left">
-      <h3>Proyecto vinoteca en MVC y API REST</h3>
-      <p>
-        Trabajo colaborativo en grupo realizado para la materia Web 2 de TUDAI. Proyecto de vinotecas realizado en dos partes: un sistema MVC y una API REST, ambos diseñados para mostrar métricas de negocio en tiempo real. El dashboard es responsive y construido con React y Chart.js para una visualización dinámica y clara de los datos.
-      </p>
-      <div style="display: flex; gap: 10px;">
-        <button class="cta-button glow" onclick="window.open('https://github.com/josefinabelaunzaran0106/TPE-WEB2-vinoteca', '_blank')">Ver código MVC</button>
-        <button class="cta-button glow" onclick="window.open('https://github.com/PauloAlvarez01/tpe_web2_3raEntrega', '_blank')">Ver código API</button>
+    <section class="section skills-section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>02</span>
+
+          <h2>Tecnologías</h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+
+            <span class="skill-number">01</span>
+
+            <h3>Backend</h3>
+
+            <p>
+              Desarrollo de aplicaciones y APIs,
+              lógica de negocio y conexión con bases de datos.
+            </p>
+
+            <div class="tags">
+              <span>PHP</span>
+              <span>Java</span>
+              <span>Laravel</span>
+              <span>Spring Boot</span>
+              <span>REST API</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <span class="skill-number">02</span>
+
+            <h3>Frontend</h3>
+
+            <p>
+              Interfaces responsive y experiencias de usuario
+              adaptadas a diferentes dispositivos.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Angular</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <span class="skill-number">03</span>
+
+            <h3>WordPress</h3>
+
+            <p>
+              Desarrollo de temas personalizados, CPT,
+              taxonomías, funcionalidades y sitios institucionales.
+            </p>
+
+            <div class="tags">
+              <span>WordPress</span>
+              <span>PHP</span>
+              <span>CPT</span>
+              <span>Gutenberg</span>
+              <span>Plugins</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <span class="skill-number">04</span>
+
+            <h3>Herramientas</h3>
+
+            <p>
+              Herramientas utilizadas para desarrollo,
+              despliegue, gestión de datos y trabajo colaborativo.
+            </p>
+
+            <div class="tags">
+              <span>Docker</span>
+              <span>Git</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>Superset</span>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROYECTOS
+    ========================== -->
+
+    <section class="section projects-section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>03</span>
+
+          <h2>Proyectos destacados</h2>
+
+        </div>
+
+
+        <!-- PROYECTO 1 -->
+
+        <article class="project-card featured-project">
+
+          <div class="project-image">
+
+            <img
+              src="webcmdv.png"
+              alt="Sistema de historia clínica"
+            >
+
+            <button
+              class="image-overlay"
+              data-gallery="consultorio"
+              aria-label="Ver imágenes del proyecto"
+            >
+              Ver proyecto
+            </button>
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-type">
+              SISTEMA WEB
+            </span>
+
+            <h3>
+              Sistema de Historia Clínica
+            </h3>
+
+            <p>
+              Aplicación web para la gestión de historias clínicas
+              médicas. El sistema permite registrar, consultar y
+              modificar información de pacientes mediante una
+              arquitectura MVC.
+            </p>
+
+            <div class="tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>MVC</span>
+              <span>Docker</span>
+              <span>Smarty</span>
+            </div>
+
+            <button
+              class="project-link"
+              data-gallery="consultorio"
+            >
+              Ver imágenes →
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- PROYECTO 2 -->
+
+        <article class="project-card">
+
+          <div class="project-image project-gallery-trigger" data-gallery="angular">
+
+            <img
+              src="tienda-deco1.png"
+              alt="Carrito de compras desarrollado en Angular"
+            >
+
+            <div class="image-overlay">
+              <span>Ver proyecto</span>
+            </div>
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-type">
+              FRONTEND
+            </span>
+
+            <h3>
+              Carrito de compras en Angular
+            </h3>
+
+            <p>
+              Aplicación desarrollada para el Seminario de Angular
+              de TUDAI. Incluye listado de productos, gestión de
+              carrito y actualización automática de stock.
+            </p>
+
+            <div class="tags">
+              <span>Angular</span>
+              <span>TypeScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://stackblitz.com/~/github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran"
+                target="_blank"
+                rel="noopener"
+              >
+                Demo →
+              </a>
+
+              <a
+                href="https://github.com/josefinabelaunzaran0106/Seminario-angular-Belaunzaran"
+                target="_blank"
+                rel="noopener"
+              >
+                Código →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- PROYECTO 3 -->
+
+        <article class="project-card">
+
+          <div class="project-image project-preview-vinoteca">
+
+            <div class="vinoteca-preview">
+
+              <div class="vinoteca-header">
+                <span class="vinoteca-logo">VINOTECA</span>
+
+                <span class="vinoteca-api">
+                  API REST
+                </span>
+              </div>
+
+              <div class="vinoteca-dashboard">
+
+                <div class="dashboard-title">
+                  Dashboard
+                </div>
+
+                <div class="dashboard-cards">
+
+                  <div class="dashboard-card">
+                    <span>Productos</span>
+                    <strong>128</strong>
+                  </div>
+
+                  <div class="dashboard-card">
+                    <span>Ventas</span>
+                    <strong>342</strong>
+                  </div>
+
+                  <div class="dashboard-card">
+                    <span>Stock</span>
+                    <strong>86%</strong>
+                  </div>
+
+                </div>
+
+                <div class="dashboard-chart">
+
+                  <div class="chart-title">
+                    Ventas mensuales
+                  </div>
+
+                  <div class="chart-bars">
+                    <span style="height: 35%;"></span>
+                    <span style="height: 55%;"></span>
+                    <span style="height: 42%;"></span>
+                    <span style="height: 70%;"></span>
+                    <span style="height: 62%;"></span>
+                    <span style="height: 85%;"></span>
+                    <span style="height: 75%;"></span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="vinoteca-footer">
+                PHP · MVC · React · Chart.js
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-type">
+              FULLSTACK
+            </span>
+
+            <h3>
+              Vinoteca — MVC + API REST
+            </h3>
+
+            <p>
+              Proyecto colaborativo desarrollado para Web 2.
+              Incluye un sistema MVC y una API REST, junto con
+              un dashboard de métricas desarrollado con React
+              y Chart.js.
+            </p>
+
+            <div class="tags">
+              <span>PHP</span>
+              <span>REST API</span>
+              <span>React</span>
+              <span>Chart.js</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://github.com/josefinabelaunzaran0106/TPE-WEB2-vinoteca"
+                target="_blank"
+                rel="noopener"
+              >
+                Código MVC →
+              </a>
+
+              <a
+                href="https://github.com/PauloAlvarez01/tpe_web2_3raEntrega"
+                target="_blank"
+                rel="noopener"
+              >
+                Código API →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROYECTO 4 -->
+
+        <article class="project-card">
+
+          <div class="project-image project-gallery-trigger" data-gallery="interfaces">
+
+            <img
+              src="numbers1.png"
+              alt="Página web infantil Más amigos, más diversión"
+            >
+
+            <div class="image-overlay">
+              <span>Ver proyecto</span>
+            </div>
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-type">
+              FRONTEND
+            </span>
+
+            <h3>
+              Más amigos, más diversión
+            </h3>
+
+            <p>
+              Sitio web interactivo desarrollado con HTML, CSS
+              y JavaScript, incorporando animaciones, efectos
+              de scroll y diseño responsive.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://josefinabelaunzaran0106.github.io/Interfaces/TP4/"
+                target="_blank"
+                rel="noopener"
+              >
+                Ver demo →
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- WORDPRESS -->
+
+    <article class="project-card wordpress-project">
+
+      <div class="project-image">
+
+        <div class="wordpress-placeholder">
+          <span>WP</span>
+          <strong>WordPress</strong>
+          <small>Sistemas Institucionales personalizados</small>
+        </div>
+
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-type">
+          DESARROLLO PROFESIONAL
+        </span>
+
+        <h3>
+          Desarrollo de sitios WordPress
+        </h3>
+
+        <p>
+          Desarrollo y mantenimiento de sitios institucionales
+          utilizando temas personalizados, Custom Post Types,
+          taxonomías, Gutenberg y funcionalidades específicas
+          desarrolladas en PHP.
+        </p>
+
+        <div class="tags">
+          <span>WordPress</span>
+          <span>PHP</span>
+          <span>CPT</span>
+          <span>Gutenberg</span>
+          <span>Docker</span>
+        </div>
+
+        <div class="project-actions">
+          <a
+            href="https://sistemasdeinformacion.unicen.edu.ar"
+            target="_blank"
+            rel="noopener"
+          >
+            Ver sitio →
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =========================
+         EXPERIENCIA
+    ========================== -->
+
+    <section class="section experience-section" id="experience">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>04</span>
+
+          <h2>Experiencia</h2>
+
+        </div>
+
+        <div class="experience-item">
+
+          <div class="experience-date">
+            2024 — Actualidad
+          </div>
+
+          <div class="experience-content">
+
+            <h3>
+              Desarrolladora — UNICEN
+            </h3>
+
+            <p class="experience-company">
+              Universidad Nacional del Centro de la Provincia de Buenos Aires
+            </p>
+
+            <p>
+              Desarrollo y mantenimiento de sitios web institucionales,
+              implementación de nuevas funcionalidades, desarrollo de
+              Custom Post Types y personalización de WordPress.
+            </p>
+
+            <div class="tags">
+              <span>PHP</span>
+              <span>WordPress</span>
+              <span>JavaScript</span>
+              <span>Docker</span>
+              <span>MySQL</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section class="section contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="contact-box">
+
+          <span class="eyebrow">
+            CONTACTO
+          </span>
+
+          <h2>
+            ¿Trabajamos juntos?
+          </h2>
+
+          <p>
+            Si querés conocer más sobre mi trabajo o conversar
+            sobre un proyecto, podés contactarme.
+          </p>
+
+          <div class="contact-links">
+
+            <a href="mailto:josefinabelaunzaran0106@gmail.com">
+              Email
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/josefina-belaunzaran/"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/josefinabelaunzaran0106"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       MODAL GALERÍA
+  ========================== -->
+
+  <div
+    class="gallery-modal"
+    id="gallery-modal"
+    aria-hidden="true"
+  >
+
+    <button
+      class="gallery-close"
+      id="gallery-close"
+      aria-label="Cerrar galería"
+    >
+      ×
+    </button>
+
+    <button
+      class="gallery-prev"
+      id="gallery-prev"
+      aria-label="Imagen anterior"
+    >
+      ‹
+    </button>
+
+    <div class="gallery-content">
+
+      <img
+        id="gallery-image"
+        src=""
+        alt=""
+      >
+
+      <div class="gallery-counter" id="gallery-counter">
+        1 / 1
+      </div>
+
     </div>
 
-    <div class="project-card slide-in-right">
-  <h3>Desarrollo de Páginas Personalizadas en WordPress</h3>
-  <p>
-    He trabajado en la personalización de sitios web utilizando WordPress, creando temas personalizados para satisfacer las necesidades de cada cliente. Esto incluyó la integración de funcionalidades específicas mediante la creación de Custom Post Types (CPT) y la modificación de plugins existentes para lograr un rendimiento óptimo. Me aseguré de que todos los sitios fueran completamente responsivos, brindando una excelente experiencia de usuario en dispositivos móviles.
-  </p>
-</div>
-<div class="project-card slide-in-right">
-  <h3>Creación y Personalización de Custom Post Types (CPT)</h3>
-  <p>
-    He diseñado y desarrollado Custom Post Types (CPT) para permitir a los clientes gestionar diferentes tipos de contenido en WordPress de manera eficiente. Esto incluyó la creación de taxonomías personalizadas, la integración de campos personalizados con Advanced Custom Fields (ACF) y la creación de plantillas personalizadas para cada tipo de contenido, mejorando la administración y la visualización de la información en el sitio web.
-  </p>
-</div>
-<div class="project-card slide-in-right">
-  <h3>Desarrollo de Plugins Personalizados en WordPress</h3>
-  <p>
-    A lo largo de mi experiencia en WordPress, he desarrollado plugins personalizados para resolver necesidades específicas de los proyectos. Desde la creación de funcionalidades para la gestión de contenido, hasta la integración de sistemas externos, estos plugins fueron diseñados para ser altamente optimizados, seguros y fáciles de mantener, contribuyendo a la mejora de la eficiencia y la experiencia de usuario.
-  </p>
-</div>
+    <button
+      class="gallery-next"
+      id="gallery-next"
+      aria-label="Imagen siguiente"
+    >
+      ›
+    </button>
 
-<div class="project-card slide-in-right">
-  <h3>Análisis de Datos con Apache Superset</h3>
-  <p>
-    He trabajado con Apache Superset para el análisis de datos en proyectos complejos. Utilizando esta herramienta de visualización y exploración de datos, he sido capaz de crear dashboards interactivos y visualizaciones dinámicas que han permitido a los clientes tomar decisiones informadas basadas en datos. Este análisis incluyó la creación de gráficos personalizados, filtros y la integración de diversas fuentes de datos.
-  </p>
-</div>
-
-
-
-  </section>
-<section class="contact container fade-in" id="contact" aria-label="Sección de contacto">
-  <h2>Contacto</h2>
-  <p class="contact-invite">¡Escríbeme o visítame en mis redes!</p>
-  
-  <div class="icons" role="list">
-    <a href="mailto:josefinabelaunzaran0106@gmail.com" target="_blank" rel="noopener" class="icon-link" aria-label="Enviar email a Josefina" title="Email" role="listitem">
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
-        <rect x="2" y="5" width="20" height="14" rx="2" ry="2" />
-        <path d="M2 7l10 7 10-7" />
-      </svg>
-    </a>
-
-    <a href="https://www.linkedin.com/in/josefina-belaunzaran/" target="_blank" rel="noopener" class="icon-link" aria-label="Perfil de LinkedIn de Josefina" title="LinkedIn" role="listitem">
-      <svg width="30" height="30" fill="none" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-        <rect x="2" y="7" width="5" height="12" />
-        <circle cx="4.5" cy="4.5" r="2" />
-        <path d="M9 19h4v-7a2 2 0 0 1 4 0v7h4v-8a6 6 0 0 0-12 0z"/>
-      </svg>
-    </a>
-
-    <a href="https://github.com/josefinabelaunzaran0106" target="_blank" rel="noopener" class="icon-link" aria-label="Perfil de GitHub de Josefina" title="GitHub" role="listitem">
-      <svg width="30" height="30" fill="none" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1 .1 1.6 1 1.6 1 1 .1 1.7 1.1 1.7 1.1 1 1.7 2.8 1.2 3.5.9.1-.6.3-1 .6-1.2-2.2-.3-4.4-1.1-4.4-5 0-1.1.4-2 .9-2.7 0 0 .8-.3 2.6 1 1.5-.4 3-.4 4.5 0 1.7-1.3 2.5-1 2.5-1 .6.9 1 1.8 1 2.9 0 3.9-2.1 4.7-4.3 5 .3.3.6.9.6 1.7v2.5c0 .3.2.6.7.5C19.1 20.1 22 16.4 22 12c0-5.5-4.5-10-10-10z"/>
-      </svg>
-    </a>
   </div>
-</section>
 
 
   <footer>
-    &copy; 2025 Josefina Belaunzaran
+
+    <p>
+      © 2026 Josefina Belaunzaran
+    </p>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
+
 </html>
+```
