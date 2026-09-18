@@ -4,6 +4,7 @@
 
 const menuToggle = document.getElementById("menu-toggle");
 const mainNav = document.getElementById("main-nav");
+const menuIcon = menuToggle?.querySelector(".menu-icon");
 
 if (menuToggle && mainNav) {
 
@@ -15,6 +16,15 @@ if (menuToggle && mainNav) {
       "aria-expanded",
       isOpen
     );
+
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Cerrar menú" : "Abrir menú"
+    );
+
+    if (menuIcon) {
+      menuIcon.textContent = isOpen ? "×" : "☰";
+    }
 
   });
 
@@ -30,12 +40,20 @@ if (menuToggle && mainNav) {
         "false"
       );
 
+      menuToggle.setAttribute(
+        "aria-label",
+        "Abrir menú"
+      );
+
+      if (menuIcon) {
+        menuIcon.textContent = "☰";
+      }
+
     });
 
   });
 
 }
-
 const galleryTriggers = document.querySelectorAll(".project-gallery-trigger");
 
 galleryTriggers.forEach(trigger => {
